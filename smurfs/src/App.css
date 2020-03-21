@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .App {
   text-align: center;
+}
+body{
+  background: linear-gradient(135deg, rgba(15, 15, 15, 0.46) 0%, rgba(15, 15, 15, 0.46) 12.5%,rgba(22, 22, 22, 0.46) 12.5%, rgba(22, 22, 22, 0.46) 25%,rgba(29, 29, 29, 0.46) 25%, rgba(29, 29, 29, 0.46) 37.5%,rgba(36, 36, 36, 0.46) 37.5%, rgba(36, 36, 36, 0.46) 50%,rgba(44, 44, 44, 0.46) 50%, rgba(44, 44, 44, 0.46) 62.5%,rgba(51, 51, 51, 0.46) 62.5%, rgba(51, 51, 51, 0.46) 75%,rgba(58, 58, 58, 0.46) 75%, rgba(58, 58, 58, 0.46) 87.5%,rgba(65, 65, 65, 0.46) 87.5%, rgba(65, 65, 65, 0.46) 100%),linear-gradient(45deg, rgb(86, 86, 86) 0%, rgb(86, 86, 86) 12.5%,rgb(77, 77, 77) 12.5%, rgb(77, 77, 77) 25%,rgb(69, 69, 69) 25%, rgb(69, 69, 69) 37.5%,rgb(60, 60, 60) 37.5%, rgb(60, 60, 60) 50%,rgb(52, 52, 52) 50%, rgb(52, 52, 52) 62.5%,rgb(43, 43, 43) 62.5%, rgb(43, 43, 43) 75%,rgb(35, 35, 35) 75%, rgb(35, 35, 35) 87.5%,rgb(26, 26, 26) 87.5%, rgb(26, 26, 26) 100%);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  height: 200vh;
+}
+.App form{
+  padding: 2%;
+  background: rgba(0, 0, 0, 0.350);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 25%;
+  margin: 0 auto;
+}
+.App form input{
+ padding: 0.2rem 0.7rem;
+ margin: 0.5% 0 2%;
+ border-radius: 5px;
+ border: none;
+}
+.App form button{
+  margin: 3% auto 0%;
+  padding: 0.5rem 0.9rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: slateblue;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.App form button:hover{
+  transform: scale(1.1);
+  background-color: darkslateblue;
+}
+.cta-addsmurf{
+  margin: 3% auto 0%;
+  padding: 0.75rem 2rem;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: slateblue;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.cta-addsmurf:hover{
+  transform: scale(1.1);
+  background-color: darkslateblue;
+}
+.smurf-list{
+  width: 80%;
+  margin: 3% auto;
+  background: rgba(0, 0, 0, 0.250);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+
 }

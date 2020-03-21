@@ -9,8 +9,8 @@ export const fetchSmurfs = () => dispatch => {
         dispatch({type:FETCH_SUCCESS, payload:res.data})
     }).catch(err => dispatch({type:FETCH_FAIL, payload:err}))
 };
+
 export const addSmurf = smurf => dispatch => {
-    console.log("receiv", smurf)
     dispatch({type:FETCH_START}); 
     axios.post(`http://localhost:3333/smurfs/`, smurf).then(res=>{
         dispatch({type:FETCH_SUCCESS, payload:res.data})
@@ -18,9 +18,16 @@ export const addSmurf = smurf => dispatch => {
 };
 
 export const removeSmurf = id => dispatch => {
-    console.log("wanting to remove", id);
     dispatch({type:FETCH_START}); 
     axios.delete(`http://localhost:3333/smurfs/${id}`, id).then(res=>{
+        dispatch({type:FETCH_SUCCESS, payload:res.data})
+    }).catch(err => dispatch({type:FETCH_FAIL, payload:err}))
+};
+
+export const editSmurf = smurf => dispatch => {
+    console.log("wanting to edit", smurf);
+    dispatch({type:FETCH_START}); 
+    axios.delete(`http://localhost:3333/smurfs/${smurf.id}`, smurf).then(res=>{
         dispatch({type:FETCH_SUCCESS, payload:res.data})
     }).catch(err => dispatch({type:FETCH_FAIL, payload:err}))
 };
